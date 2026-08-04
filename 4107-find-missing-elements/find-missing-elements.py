@@ -8,7 +8,6 @@ class Solution:
         for i in range(start,end+1):
             if i not in nums:
                 output.append(i)
-        output.sort()
         return output
 
 
