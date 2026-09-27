@@ -7,9 +7,9 @@ class Solution:
         s = [x for x in s]
         for i in range(len(s)):
             if s[i] == "(":
-                temp.append((s[i],i)) 
+                temp.append(i) 
             elif s[i] == ")" and len(temp) > 0:
-                pairs.append((temp.pop()[1],i))
+                pairs.append((temp.pop(),i))
         for j in pairs:
             s[j[0]:j[1]] = s[j[0]:j[1]][::-1] 
         s = [x for x in s if x not in"()"]
