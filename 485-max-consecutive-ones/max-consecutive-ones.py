@@ -6,7 +6,8 @@ class Solution:
             if num == 1:
                 currMax += 1
             else:
+                maxOnes = max(maxOnes,currMax)
                 currMax = 0
-            maxOnes = max(maxOnes,currMax)
-        return maxOnes
+            
+        return max(maxOnes,currMax)
         
