@@ -3,6 +3,6 @@ class Solution:
         minElement = min(nums)
         moves = 0
         for i in nums:
-            moves += (minElement - i)
-        return abs(moves)
+            moves += (i - minElement)
+        return moves
         
